@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <com.socoolby.scroll_table.widget.CustomScrollView
+        android:id="@+id/cv_crolltable_header_horizontion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="61dp"
+        android:background="#f00"
+         >
+        <LinearLayout
+            android:id="@+id/ll_crolltable_header_horicontion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.socoolby.scroll_table.widget.CustomScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/cv_crolltable_header_horizontion"
+        >
+        <com.socoolby.scroll_table.widget.CustomScrollView
+            android:layout_below="@+id/cv_crolltable_header_horizontion"
+            android:id="@+id/cv_scrolltable_header_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#00f"
+            >
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_crolltable_header_veritcal"
+                android:orientation="vertical"
+                />
+        </com.socoolby.scroll_table.widget.CustomScrollView>
+
+        <com.socoolby.scroll_table.widget.CustomScrollView
+            android:id="@+id/cv_crolltable_content"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="fill_parent"
+            >
+
+            <TableLayout
+                android:id="@+id/content_crolltable_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                >
+            </TableLayout>
+        </com.socoolby.scroll_table.widget.CustomScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
